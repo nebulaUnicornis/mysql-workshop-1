@@ -1,0 +1,9 @@
+sudo mysql-ctl install;
+
+/*-------------------------
+RESULT:
+Root User: lignumpecattum
+Database Name: c9
+-------------------------*/
+
+mysql -uroot -hlocalhost
