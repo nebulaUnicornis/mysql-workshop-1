@@ -1,0 +1,23 @@
+CREATE DATABASE hotel;
+
+CREATE TABLE room (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    description VARCHAR(40),
+    locationFloor INT,
+    capacity INT,
+    numofWindows INT,
+    availability ENUM('Yes', 'No'),
+    dateAvailability new date(),
+    characteristic ENUM('private kitchen', 'jacuzzi', 'balcony'), 
+);
+
+
+CREATE TABLE floor (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    characteristic ENUM('carpet', 'ivory', 'gold'),
+);
+
+CREATE TABLE room_floor (
+    id_room INT,
+    id_floor INT
+);
